@@ -25,6 +25,12 @@ lista.addEventListener("click",(e)=>{
     guardar();
 })
 
+document.addEventListener('keyup', (e) => {
+    if(e.keyCode == 13){
+        clicked()
+    }
+})
+
 function guardar(){
     localStorage.setItem("data",lista.innerHTML);
 }
